@@ -29,7 +29,7 @@ import pytesseract
 # ================== ΡΥΘΜΙΣΕΙΣ ΧΡΗΣΤΗ ==================
 
 # ΒΑΛΕ ΕΔΩ ΤΟ TOKEN ΤΟΥ BOT ΣΟΥ
-DISCORD_TOKEN = "MTQ0MTk1Njg5ODYyNTgxODg1NA.GZMvhK.PGrUi_SfspAlRp7wc3HAKc0Ur3L_99bERs0j7A"
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 # IDs καναλιών (τα έχεις ήδη δώσει)
 PROOF_CHANNEL_ID = 1433200267947671604      # κανάλι αποδείξεων
@@ -460,5 +460,6 @@ if __name__ == "__main__":
         print("❌ Βάλε το πραγματικό DISCORD TOKEN στην μεταβλητή DISCORD_TOKEN στην αρχή του αρχείου.")
     else:
         bot.run(DISCORD_TOKEN)
+
 
 
